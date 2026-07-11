@@ -90,3 +90,13 @@ class StructuralAnomaly(BaseModel):
     zip_code: str
     actual_role_count: int
     notes: str
+
+
+class RunMetrics(BaseModel):
+    """Token usage and timing captured for a single LLM call."""
+
+    latency_ms: float
+    input_tokens: int
+    output_tokens: int
+    retry_count: int       # number of retries beyond the first attempt
+    validation_errors: int

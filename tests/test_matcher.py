@@ -2,7 +2,6 @@
 
 from app.matcher import names_match, normalize_name, normalize_url, urls_match
 
-
 # --- normalize_name ---
 
 

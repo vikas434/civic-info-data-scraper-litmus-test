@@ -12,7 +12,8 @@ def make_workbook(tmp_path: Path, rows: list[tuple]) -> Path:
     """Create a minimal test workbook with standard headers."""
     wb = openpyxl.Workbook()
     ws = wb.active
-    ws.append(["Zip Code", "Gov Level", "Branch", "Role", "MyCivX \u2013 Name", "MyCivX \u2013 Website"])
+    ws.append(["Zip Code", "Gov Level", "Branch", "Role",
+               "MyCivX \u2013 Name", "MyCivX \u2013 Website"])
     for row in rows:
         ws.append(list(row))
     path = tmp_path / "test.xlsx"
