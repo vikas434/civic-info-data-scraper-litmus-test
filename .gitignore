@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+*.egg-info/
+dist/
+.coverage
+htmlcov/
+.ruff_cache/
+output/
+reports/
+*.xlsx
+!input/*.xlsx
