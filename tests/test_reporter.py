@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 
 from app.config import ModelConfig, ModelPricing
-from app.models import BenchmarkRecord, MatchResult, RunMetrics
+from app.models import MatchResult, RunMetrics
 from app.reporter import (
     append_to_csv,
     build_benchmark_record,
